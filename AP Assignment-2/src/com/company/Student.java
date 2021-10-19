@@ -5,7 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Map;
-import java.util.Scanner;
 
 public class Student implements person {
     private String name;
@@ -166,10 +165,10 @@ public class Student implements person {
         }
     }
     @Override
-    public void add_comments() throws ParseException {
+    public void add_comments() throws Exception {
         System.out.printf("Enter comment: ");
-        Scanner sc= new Scanner(System.in);
-        String comment = sc.nextLine();
+        Reader.init(System.in);
+        String comment = Reader.nextLine();
         SimpleDateFormat sdf = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
         String dateInString = sdf.format(new Date());
         Date date = sdf.parse(dateInString);
