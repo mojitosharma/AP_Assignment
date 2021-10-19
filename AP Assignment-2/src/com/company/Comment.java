@@ -8,6 +8,7 @@ public class Comment {
     public Comment(String text, String commented_by, Date date){
         this.comment_text = text;
         this.date = date;
+        this.commented_by = commented_by;
     }
     //getter
     public Date getDate() {
