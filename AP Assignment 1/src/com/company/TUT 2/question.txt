@@ -1,0 +1,15 @@
+We want to make an app like Wolfram Alpha. Our app calculates, differentiates and integrates functions. Since the number of functions can be large, we only implement the following functions.
+Power(a, x) -> calculates x^a
+Log(a, x) -> calculates Log(x) with base as a
+Exponential(a, x) -> calculates a^x
+Constant(a)
+
+Our program should compute differential and integral for the above-mentioned functions.
+
+The functions are also joined using operands. The operand which our program should implement are:
+Addition
+Subtraction
+Multiplication
+Division
+
+We need not differentiate and integrate functions joined by above operands
